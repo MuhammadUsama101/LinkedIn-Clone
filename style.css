@@ -26,11 +26,17 @@
 html{
     font-size: 62.5%;
 }
-
+body{
+    background-color: #F4F2EE;
+}
 nav{
     height: 6rem;
     margin-bottom: 2.1rem;
     display: flex;
+    position: fixed;
+    padding: 0px 5%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.202);
+    background-color: white;
 }
 .nav-left{
     width: 30%;
@@ -39,7 +45,6 @@ nav{
     align-items: center;
     gap: 1rem;
     justify-content: start;
-    padding-left: 5rem;
 }
 .nav-left>img{
     width: 3.2rem;
@@ -113,18 +118,94 @@ nav{
     width: 120rem;
     min-height: 58rem;
     display: grid;
-    margin: auto;
-    grid-template-rows: 10rem 21rem minmax(14rem,1fr);
-    grid-template-columns: 22% 46% 27%;
+    grid-template-rows: 15rem 21rem minmax(14rem,1fr);
+    grid-template-columns: 21% 46% 27%;
     gap: 1rem 3rem;
+    margin: 0px 5%;
+    padding-top: 9rem;
 }
 .box{
-    border: 1px solid rgba(0, 0, 0, 0.296);
+    border: 1px solid rgba(128, 128, 128, 0.426);
     font-size: 2rem;
     border-radius: 1rem;
+    background-color: white;
 }
 .box1{
     grid-row: 1/3;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    padding: 1rem;
+}
+.box1-abs{
+    width: 100%;
+    height: 16%;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+.box1-name{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.202);
+    height: 50%;
+    justify-content: center;
+    gap: 2rem;
+}
+.box1-name>img{
+    width: 7.8rem;
+    border-radius:50% ;
+    border: 2px solid white;
+}
+.name-in{
+    text-align: center;
+}
+.name-in>h2{
+    padding-bottom: .5rem;
+}
+.name-in>p{
+    color: rgb(152, 146, 146);
+}
+.box1-connection{
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.202);
+    padding: 1rem 0px;
+}
+.box1-upgrade{
+    font-size: 1.3rem;
+    padding: 1rem 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.202);
+}
+.box1-top>p{
+    color: rgb(152, 146, 146);
+}
+.box1-bottom{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+}
+.bottom-yellow{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(250, 192, 30);
+}
+.box1-items{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0px;
+}
+.box1-items>p{
+    font-weight: 600;
 }
 .box3{
     grid-column: 3;
@@ -135,12 +216,42 @@ nav{
     min-height: 10rem;
 }
 .box5{
-    height: 18rem;
+    height: 16rem;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+.box5-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.202);
+    padding-bottom: 1rem;
+}
+.box5-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.box5-left>a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.box5-right{
+    font-size: 2rem;
+}
+.box5-bottom{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(151, 148, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
 }
 .box6{
     height: 40rem;
     position: sticky;
-    top: 2rem;
+    top: 9rem;
 }
 .post{
     width: 100%;

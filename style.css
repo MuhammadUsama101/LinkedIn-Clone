@@ -37,6 +37,7 @@ nav{
     padding: 0px 5%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.202);
     background-color: white;
+    z-index: 99;
 }
 .nav-left{
     width: 30%;
@@ -207,13 +208,103 @@ nav{
 .box1-items>p{
     font-weight: 600;
 }
+.box2{
+    padding: 0px 2rem;
+}
+.box2-top{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 50%;
+    align-items: center;
+}
+.box2-top>img{
+    width: 5.2rem;
+    border-radius: 50%;
+}
+.box2-top>input{
+    border-radius: 10rem;
+    border: 1px solid gray;
+    padding: 0px 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 90%;
+    height: 5rem;
+}
+.box2-bottom{
+    display: flex;
+    font-size: 1.6rem;
+    color: gray;
+    align-items: center;
+    height: 50%;
+    justify-content: space-around;
+    font-weight: 600;
+}
+.box2-left,.box2-mid,.box2-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 .box3{
     grid-column: 3;
     grid-row: 1/3;
+    padding: 1.3rem;
+    font-size: 1.7rem;
+}
+.box3-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.box3-top>p{
+    font-weight: 600;
+}
+.box3-top>img{
+    width: 1.4rem;
+    height:1.4rem;
+}
+.box3-account{
+    display: flex;
+    padding: 1rem 0px;
+    gap: 2rem;
+}
+.box3-account-left>img{
+    width: 6rem;
+    border-radius: 50%;
+}
+.box3-account-right{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.box3-account-right>p{
+    font-weight: 700;
+}
+.box3-account-right>span{
+    color: gray;
+}
+.box3-account-right>button{
+    background-color: transparent;
+    border: 1px solid black;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.box3-bottom{
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .box4{
     grid-row: 2/4;
     min-height: 10rem;
+    background-color: #F4F2EE;
+    border: none;
 }
 .box5{
     height: 16rem;
@@ -249,15 +340,69 @@ nav{
     height: 30%;
 }
 .box6{
-    height: 40rem;
+    height: 43rem;
     position: sticky;
     top: 9rem;
+    overflow: hidden;
+    background-color: #F4F2EE;
+    border: none;
+    font-size: 1.2rem;
+}
+.box6>img{
+    width: 100%;
+    border-radius: 3%;
+    border: 1px solid rgba(128, 128, 128, 0.208);
+}
+.box6-bottom{
+    width: 100%;
+    height: 9rem;
+    text-align: center;
+    margin: 1rem 0px;
+}
+.box6-bottom>a{
+    color: gray;
+    text-decoration: none;
+    padding: 1rem .7rem;
+    line-height: 2.3rem;
+}
+.box6-copyright{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 .post{
     width: 100%;
-    height: 42rem;
-    background-color: yellow;
-    border: 1px solid rgba(0, 0, 0, 0.285);
+    min-height: 42rem;
     margin-bottom: 1.2rem;
     border-radius: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid rgba(128, 128, 128, 0.426);
+    background-color: white;
+}
+.post-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+.post-left{
+    display: flex;
+    gap: 1rem;
+}
+.post-left>img{
+    width: 5rem;
+}
+.post-right>i{
+    font-size: 2.5rem;
+    rotate: 45deg;
+}
+.post>p{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+.post>img{
+    width: 100%;
 }

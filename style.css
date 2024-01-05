@@ -28,9 +28,13 @@ html{
 }
 body{
     background-color: #F4F2EE;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
 nav{
     height: 6rem;
+    width: 100%;
     margin-bottom: 2.1rem;
     display: flex;
     position: fixed;
@@ -122,7 +126,6 @@ nav{
     grid-template-rows: 15rem 21rem minmax(14rem,1fr);
     grid-template-columns: 21% 46% 27%;
     gap: 1rem 3rem;
-    margin: 0px 5%;
     padding-top: 9rem;
 }
 .box{
@@ -405,4 +408,74 @@ nav{
 }
 .post>img{
     width: 100%;
+}
+@media (max-width:1229px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:975px) {
+    .container{
+        width: 90rem;
+        grid-template-columns: 30% 60%;
+    }
+    .box3,.box6{
+        display: none;
+    }
+    .input-div{
+        display: none;
+    }
+    .nav-left{
+        width: 6rem;
+    }
+    .nav-center{
+        width: 55rem;
+        justify-content: start;
+    }
+    .nav-right{
+        width: 25rem;
+    }
+}
+@media (max-width:775px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,minmax(10rem,1fr));
+    }
+    .box4{
+        grid-row: 5/6;
+    }
+    .box5{
+        grid-row: 3/4;
+    }
+}
+@media (max-width:690px) {
+    .nav-center{
+        justify-content: space-around;
+    }
+    .nav-right-left>p{
+        display: none;
+    }
+    .nav-box>p{
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .nav-right{
+        display: none;
+    }
+    .nav-center{
+        border-right: none;
+        width: 100%;
+    }
+}
+@media (max-width:425px) {
+    .container{
+        padding-top: 6rem;
+    }
+    .box{
+        border-radius: 0px;
+    }
+    .post{
+        border-radius: 0px;
+    }
 }
